@@ -13,55 +13,55 @@ html{
 }
 .container{
   background-image: linear-gradient(to top, #1e1d1f, #211d28, #221e32, #211e3c, #1b2047);    font-family:'LisuBosa', sans-serif;
+  color:#f4f2f5;
 }
 [class$="title"] {
   font-family: 'Roboto', sans-serif;
   font-weight:100;
+  font-size: 2rem;
+}
+.header{
+    padding-left: 100px;
+}
+.hero{
+    padding: 50px;
 }
 /* Header section */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: .5rem;
     border-bottom:1px solid #fff;
   }
-  .header__left, .header__center, .header__buttons {
-    display: flex;
-    align-items: center;
+  .header__left{
+    display:flex;
   }
   .header__logo{
         width: 4rem; /* Adjust the width as needed */
         height: auto;
         border-radius: 50%;
   }
- .header__name, .header__link {
-    font-size: 2rem;
-    padding: 0.8rem;
-    color:#fff;
-  }
-  .header__link{
-    text-decoration: none;
-    font-weight: lighter;
+ .header__name{
     font-size: 1.6rem;
+     padding: 1rem; 
   }
-  .header__buttons {
-    display: flex;
+/* hero-section */
+.hero{
+display:flex;
+flex-direction: column;
+justify-content:center ;
+align-items: center;
   }
-  .header__buttons--signin,.header__buttons--signup {
-    font-size: 1.6rem;
-    padding: 0.8rem 1.6rem;
-    margin-right: 1rem;
-    border-radius: 10px;
-    flex: 0 0 auto;
-    width:50%;
+.hero__try-btn{
+    font-size: 1.3rem;
+    padding: .4rem;
+    margin: 1.6rem;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
     color: #f4f2f5;
+}
+
   
-  }
-  .header__buttons--signin{
-    background-color: transparent;
-  }
-  .header__buttons--signup{
-    background-color: #a74cd9;
-  }
-  
+
+
