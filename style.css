@@ -1,0 +1,67 @@
+/* styles.css */
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+@font-face {
+  font-family: 'LisuBosa'; /* Use the desired font-family name */
+  src: url('/fonts/LisuBosa-ExtraLight.ttf') format('truetype');
+}
+.container{
+  background-image: linear-gradient(to top, #1e1d1f, #211d28, #221e32, #211e3c, #1b2047);    font-family:'LisuBosa', sans-serif;
+}
+[class$="title"] {
+  font-family: 'Roboto', sans-serif;
+  font-weight:100;
+}
+/* Header section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom:1px solid #fff;
+  }
+  .header__left, .header__center, .header__buttons {
+    display: flex;
+    align-items: center;
+  }
+  .header__logo{
+        width: 4rem; /* Adjust the width as needed */
+        height: auto;
+        border-radius: 50%;
+  }
+ .header__name, .header__link {
+    font-size: 2rem;
+    padding: 0.8rem;
+    color:#fff;
+  }
+  .header__link{
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 1.6rem;
+  }
+  .header__buttons {
+    display: flex;
+  }
+  .header__buttons--signin,.header__buttons--signup {
+    font-size: 1.6rem;
+    padding: 0.8rem 1.6rem;
+    margin-right: 1rem;
+    border-radius: 10px;
+    flex: 0 0 auto;
+    width:50%;
+    color: #f4f2f5;
+  
+  }
+  .header__buttons--signin{
+    background-color: transparent;
+  }
+  .header__buttons--signup{
+    background-color: #a74cd9;
+  }
+  
